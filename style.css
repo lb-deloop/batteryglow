@@ -1,0 +1,40 @@
+/* Shared by every page. System fonts only, so the site loads nothing from other sites. */
+:root { color-scheme: light dark; }
+body { margin: 0; background: #fbfbfd; color: #1d1d1f; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 48px 24px 64px; }
+h1 { margin: 0 0 8px; font: 400 clamp(40px, 7vw, 56px)/1.05 "New York", Georgia, "Times New Roman", serif; letter-spacing: -0.5px; }
+h2 { margin: 40px 0 8px; font-size: 20px; font-weight: 600; }
+h3 { margin: 28px 0 4px; font-size: 17px; font-weight: 600; }
+p, li { color: #424245; }
+ul { padding-left: 22px; }
+a { color: #0066cc; }
+.date { margin: 0 0 32px; color: #6e6e73; font-size: 15px; }
+.summary { padding: 20px 24px; border-radius: 18px; background: #fff; border: 1px solid #e5e5ea; }
+.summary p { margin: 0; color: #1d1d1f; }
+
+nav { max-width: 680px; margin: 0 auto; padding: 20px 24px 0; display: flex; align-items: center; gap: 10px; font-size: 15px; }
+nav a { color: inherit; text-decoration: none; }
+nav img { width: 28px; height: 28px; }
+nav .brand { display: flex; align-items: center; gap: 8px; font-weight: 600; margin-right: auto; }
+nav .link { color: #6e6e73; margin-left: 14px; }
+footer { max-width: 680px; margin: 0 auto; padding: 24px 24px 56px; border-top: 1px solid #e5e5ea; color: #6e6e73; font-size: 14px; }
+footer a { color: inherit; margin-right: 16px; }
+
+.hero { text-align: center; padding-top: 40px; }
+.hero img { width: 128px; height: 128px; }
+.hero h1 { margin-top: 12px; }
+.hero .lead { font-size: 21px; color: #1d1d1f; margin: 0 auto 28px; max-width: 520px; }
+.button { display: inline-block; padding: 12px 22px; border-radius: 980px; background: #1d1d1f; color: #fff; font-weight: 600; text-decoration: none; }
+.note { font-size: 14px; color: #6e6e73; }
+.features { text-align: left; margin-top: 48px; }
+
+@media (prefers-color-scheme: dark) {
+  body { background: #000; color: #f5f5f7; }
+  p, li { color: #c7c7cc; }
+  a { color: #64d2ff; }
+  .date, .note, nav .link, footer { color: #98989d; }
+  .summary { background: #1c1c1e; border-color: #38383a; }
+  .summary p, .hero .lead { color: #f5f5f7; }
+  footer { border-color: #38383a; }
+  .button { background: #f5f5f7; color: #000; }
+}
